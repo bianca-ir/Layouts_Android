@@ -79,12 +79,17 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/location_text"
                     android:layout_marginStart="@dimen/cards_marginStart_iconsText"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="@dimen/cards_marginTop_uni"
                     android:layout_toEndOf="@+id/university_icon"
                     android:text="@string/university"
                     android:textSize="@dimen/cards_textsize">
 
                 </TextView>
+
+
+
+
+
 
                 <TextView
                     android:id="@+id/more_text"
