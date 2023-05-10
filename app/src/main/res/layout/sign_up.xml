@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignupActivity">
+
+        <ImageView
+            android:id="@+id/register_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:background="@drawable/img"
+            app:layout_constraintBottom_toTopOf="@id/fullname_placeholder"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/register_image2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#7FBDB6BC"
+
+            app:layout_constraintTop_toBottomOf="@id/register_image"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <EditText
+            android:id="@+id/fullname_placeholder"
+            android:layout_width="@dimen/loginpage_fields_height"
+            android:layout_height="@dimen/loginpage_fields_width"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/text_field"
+            android:paddingLeft="@dimen/loginpage_fields_paddingleft"
+
+            android:hint="@string/fullname"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_image" />
+
+        <EditText
+            android:id="@+id/username_placeholder"
+            android:layout_width="@dimen/loginpage_fields_height"
+            android:layout_height="@dimen/loginpage_fields_width"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_field"
+            android:paddingLeft="@dimen/loginpage_fields_paddingleft"
+
+            android:hint="@string/username"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullname_placeholder" />
+
+        <EditText
+            android:id="@+id/email_placeholder"
+            android:layout_width="@dimen/loginpage_fields_height"
+            android:layout_height="@dimen/loginpage_fields_width"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_field"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_placeholder"
+            android:hint="@string/email"
+            android:paddingLeft="@dimen/loginpage_fields_paddingleft"
+            android:autofillHints="emailAddress" />
+
+        <EditText
+            android:id="@+id/password_placeholder"
+            android:layout_width="@dimen/loginpage_fields_height"
+            android:layout_height="@dimen/loginpage_fields_width"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_field"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_placeholder"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:paddingLeft="@dimen/loginpage_fields_paddingleft"
+            android:autofillHints="password" />
+
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="@dimen/loginpage_fields_height"
+            android:layout_height="@dimen/loginpage_fields_width"
+            android:layout_marginTop="@dimen/loginpage_fields_paddingleft"
+
+            android:background="@drawable/selector_buttons"
+            android:text="@string/createaccount"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_placeholder" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

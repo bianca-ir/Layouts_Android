@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img2"
+        tools:context=".CardActivity">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/first_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card1_height"
+            android:layout_margin="@dimen/card_margin"
+            android:backgroundTint="#ECE6E6"
+            app:cardElevation="@dimen/card_elevation"
+
+            app:layout_constraintBottom_toTopOf="@id/second_card"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/main_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/card_img_height"
+
+                    android:background="@drawable/img3"
+                    android:scaleType="centerCrop">
+
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/location_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_img"
+                    android:layout_marginStart="@dimen/cards_marginStart_icons"
+                    android:layout_marginTop="@dimen/cards_marginTop"
+                    android:src="@drawable/location_icon">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/location_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_img"
+                    android:layout_marginStart="@dimen/cards_marginStart_iconsText"
+                    android:layout_marginTop="@dimen/cards_marginTop"
+                    android:layout_toEndOf="@+id/location_icon"
+                    android:text="@string/location"
+                    android:textSize="@dimen/cards_textsize"
+
+                    >
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/university_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_icon"
+                    android:layout_marginStart="@dimen/cards_marginStart_icons"
+                    android:layout_marginTop="@dimen/cards_marginTop"
+                    android:src="@drawable/university_icon">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_text"
+                    android:layout_marginStart="@dimen/cards_marginStart_iconsText"
+                    android:layout_marginTop="40dp"
+                    android:layout_toEndOf="@+id/university_icon"
+                    android:text="@string/university"
+                    android:textSize="@dimen/cards_textsize">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/more_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/more"
+                    android:textColor="#277E10"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/second_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card2_height"
+            android:layout_margin="@dimen/card_margin"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#ECE6E6"
+            app:cardElevation="@dimen/card_elevation"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/account_title"
+                    style="@style/header_cards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account"
+
+                    >
+
+
+                    </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/edit_icon">
+
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/email_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/account_title"
+                    android:layout_marginStart="@dimen/cards_marginStart_icons"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/mail_icon">
+
+
+                    </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/account_title"
+                    android:layout_marginStart="@dimen/cards_marginStart_iconsText"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/email_img"
+                    android:text="email@gmail.com"
+                    android:textSize="@dimen/cards_textsize"
+
+                    >
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/password_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_img"
+                    android:layout_marginStart="@dimen/cards_marginStart_icons"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/pass_icon"
+
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/account_title"
+                    android:layout_marginStart="@dimen/cards_marginStart_iconsText"
+                    android:layout_marginTop="60dp"
+                    android:layout_toEndOf="@+id/password_img"
+                    android:text="- - - - - - - - - - - "
+                    android:textSize="@dimen/cards_textsize"
+
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

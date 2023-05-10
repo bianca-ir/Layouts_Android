@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Layout</string>
+
+    <string name="signin">Autentificare</string>
+    <string name="signup">Inregistrare</string>
+
+    <string name="email">Email</string>
+    <string name="password">Parola</string>
+
+    <string name="welcome">Bun venit</string>
+    <string name="startnow">Incepe acum</string>
+    <string name="forgotpass">Ai uitat parola?</string>
+    <string name="noaccount">Nu ai cont? Inregistreaza-te</string>
+    <string name="location">Locatie</string>
+    <string name="university">Universitate</string>
+
+    <string name="more">MAI MULT</string>
+    <string name="account">Cont</string>
+
+    <string name="fullname">Nume</string>
+
+    <string name="username">Nume de utilizator</string>
+
+    <string name="createaccount">Creeaza cont</string>
+</resources>
